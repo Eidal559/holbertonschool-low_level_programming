@@ -1,2 +1,7 @@
-#!/bin/bash
-echo #include <stdio>.h> | gcc -x c -o program- ./program rm program
+#include <stdio.h>
+
+int main(){
+
+    puts("programming is like building a multilingual puzzle");
+    return 0;
+    }
