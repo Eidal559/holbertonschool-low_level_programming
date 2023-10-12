@@ -3,9 +3,9 @@
 /**
  * main - Entry point 
  *
- *description: prints a string followed by a newline
+ *Description: prints a string followed by a newline
  *
- *return: Always 0 (success)
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
