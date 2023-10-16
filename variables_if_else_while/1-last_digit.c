@@ -9,7 +9,7 @@
 *
 * Return: Always 0 (Success)
 */
-int main(void)
+int main(void) /* The main function is the entry point of the program */
 {
 int n, last_digit;
 srand(time(0));
