@@ -5,26 +5,27 @@
 /**
 * main Entry Point
 *
-* Prints whether the random number n is positive, negative, or zero
+* This program will assign a random number to the variable n each time it is executed. print the last digit of n and check if it is greater tha 5, 0, or less than 6 and not 0.
 * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-int n;
+int n, last_digit;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if(n > 0)
+last_digit = n % 10; /* Getting the last digit of n */
+printf("Last digit of %d is %d", n, last_digit);
+if(last_digit > 5)
 {
-printf("%d is positive/n", n);
+printf(" and is greater than 5/n");
 }
-else if (n < 0)
+else if (last_digit == 0)
 {
-printf("%d is negative\n", n);
+printf(" and is 0\n");
 }
 else
 {
-printf("%d is zero\n", n);
+printf(" and is less than 6 and not 0\n");
 }
 return (0);
 }
