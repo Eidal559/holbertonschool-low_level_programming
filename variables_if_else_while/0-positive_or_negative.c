@@ -12,10 +12,10 @@ int main(void)
  printf("The number %d is ", n);
  /* Check if the number is positive, negative, or zero */
  if (n > 0) 
- printf("positive\n");
+   printf("is positive\n,", n);
  else if (n < 0)
- printf("negative\n");
+   printf("is negative\n", n);
  else{
- printf("zero\n");
+   printf("is zero\n", n);
  return (0);
 }
