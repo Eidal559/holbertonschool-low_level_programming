@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* main Entry Point
+* This function calculates the last digit of a given number.
 *
 * This program will assign a random number to the variable n.
 *
