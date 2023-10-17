@@ -1,19 +1,21 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
-* print_alphabet - prints the lowercase alphabet
+* main - prints the lowercase alphabet
 *
 * Description: This function prints the lowercase alphabet.
 *
+* Return: Always 0 (Success)
 */
-void print_alphabet(void)
+
+int main(void)
 {
 char letter = 'a';
 while (letter <= 'z')
 {
-putchar(letter);
+write(1, &letter, 1);
 letter++;
 }
-putchar ('\n');
+return (0);
 }
