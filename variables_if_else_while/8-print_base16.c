@@ -9,16 +9,14 @@
 */
 int main(void)
 {
-char digit = '0';
-char letter = 'a';
+char character = '0';
 
-for (digit = '0'; digit <= '9'; digit++)
+for (; character <= 'f'; character++)
 {
-putchar(digit);
+if (character <= '9' || (character >= 'a' && character <= 'f'))
+{
+putchar(character);
 }
-for (char letter = 'a'; letter <= 'f'; letter++)
-{
-putchar(letter);
 }
 putchar('\n');
 return(0);
