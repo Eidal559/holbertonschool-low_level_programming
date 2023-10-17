@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
 * main - Entry point of the program
@@ -7,8 +8,8 @@
 *
 * Return: Always 0 (Success)
 */
-int main (void)
+int main(void)
 {
-printf("_putchar\n");
+write(1, "_putchar\n", 9);
 return (0);
 }
