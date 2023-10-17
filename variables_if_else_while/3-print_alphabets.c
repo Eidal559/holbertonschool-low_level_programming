@@ -3,7 +3,7 @@
 /**
 * main - Entry point of the program
 *
-* Description: This program prints the lowercase and uppercase alphabet followed by a new line.
+* Description: This program prints the lowercase and uppercase alphabet.
 *
 * Return: Always 0 (Success)
 */
