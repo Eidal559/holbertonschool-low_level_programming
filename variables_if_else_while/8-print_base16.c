@@ -18,6 +18,6 @@ if (character <= '9' || (character >= 'a' && character <= 'f'))
 putchar(character);
 }
 }
-putchar('\n');
+putchar ('\n');
 return(0);
 }
