@@ -10,6 +10,7 @@
 int main(void)
 {
 char digit = '0';
+char letter = 'a';
 
 for (digit = '0'; digit <= '9'; digit++)
 {
