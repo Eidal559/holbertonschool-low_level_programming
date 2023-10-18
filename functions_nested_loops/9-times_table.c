@@ -18,21 +18,13 @@ for ( column = 0; column <= 9; column++)
 result = row * column;
 if (column == 0)
 {
-printf("0");
+printf("%2d", result);
 }
 else
 {
-printf(", ");
+printf(",%3d", result);
 }
-if (result < 10)
-{
-printf("  ");
-}
-else
-{
-printf("%d", result);
 }
 printf("\n");
-}
 }
 }
