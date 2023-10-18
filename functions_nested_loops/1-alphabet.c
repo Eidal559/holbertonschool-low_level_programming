@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_albhabet - prints the lowercase alphabet followed by newline
+* print_albhabet - This functionprints the albhabet from 'a' to 'z'.
 */
 
 void print_alphabet(void)
