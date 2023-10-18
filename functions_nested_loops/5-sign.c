@@ -6,9 +6,9 @@
 *
 * Description - This function prints the sign of the number 'n'.
 *
-* Return: 1 and prints '+'
-*         0 and prints '0'
-*         -1 and prints '-'
+* Return: (1) and prints '+'
+*         (0) and prints '0'
+*         (-1) and prints '-'
 */
 
 int print_sign(int n)
