@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
 * _putchar - Writes a character to stdout
@@ -6,6 +7,11 @@
 *
 * print_numbers - prints the numbers from 0 to 9.
 */
+
+int _putchar(char c)
+{
+return write(1, &c, 1);
+}
 
 void print_numbers(void)
 {
