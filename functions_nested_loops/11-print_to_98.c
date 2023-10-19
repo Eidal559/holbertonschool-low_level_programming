@@ -43,10 +43,3 @@ printf("\n");
 }
 }
 }
-
-int main()
-{
-int startingNumber = 5;
-print_to_98(startingNumber);
-return (0);
-}
