@@ -24,3 +24,8 @@ _putchar(digit);
 }
 _putchar('\n');
 }
+int main(void)
+{
+print_numbers();
+return (0);
+}
