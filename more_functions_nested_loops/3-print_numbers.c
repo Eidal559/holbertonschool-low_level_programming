@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
-* This function prints from 1 to 'n' on the console
-* @param n the upper limit for the range of numbers to be printed.
+* print_numbers - prints nummbers from 0 to 9.
 *
-* print_numbers - Prints the numbers from 0 to 9.
+* Return: 0
 */
 
 void print_numbers(void)
