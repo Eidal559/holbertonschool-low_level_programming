@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _putchar - Writes a character to stdout
-* @c: The character to print
+* This function prints from 1 to 'n' on the console
+* 
+* @param n the upper limit for the range of numbers to be printed.
 *
-* print_numbers - prints the numbers from 0 to 9.
 */
 
 void print_numbers(void)
