@@ -16,9 +16,10 @@ _putchar('\n');
 else
 {
 int spaces = 0;
+int i;
 while (n > 0)
 {
-for (int i = 0; i < spaces; i++)
+for (i = 0; i < spaces; i++)
 {
 _putchar(' ');
 }
