@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+* main - Entry point of the program
+*
+* Description: prints numbers from 1 to  100.
+*
+* Return: Always 0 (Success)
+*/
+
 int main()
 {
 int i;
