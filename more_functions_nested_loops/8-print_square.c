@@ -15,9 +15,10 @@ _putchar('\n');
 }
 else
 {
-for (int row = 0; row < size; row++)
+int row, col;
+for (row = 0; row < size; row++)
 {
-for (int col = 0; col < size; col++)
+for (col = 0; col < size; col++)
 {
 _putchar('#');
 }
