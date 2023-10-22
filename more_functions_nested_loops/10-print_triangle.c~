@@ -1,0 +1,32 @@
+#include "main.h"
+
+/**
+* print_triangle - prints a triangle made of '#'.
+* @size: The size of the triangle.
+*
+* Return: 0
+*/
+
+void print_triangle(int size)
+{
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+int row, space, hash;
+(row = 1; row <= size; row++)
+{
+for (space = size - row; space > 0; space--)
+{
+_putchar(' ');
+}
+for (hash = 1; hash <= row; hash++)
+{
+_putchar('\n');
+}
+_putchar('\n');
+}
+}
+}
