@@ -16,12 +16,16 @@ _putchar('\n');
 else
 {
 int row, col;
-for (row = 1; row <= size; row++) {
-for (col = 1; col <= size; col++) {
-if (col <= size - row) {
+for (row = 1; row <= size; row++)
+{
+for (col = 1; col <= size; col++)
+{
+if (col <= size - row)
+{
 _putchar(' ');
 }
-else {
+else
+{
 _putchar('#');
 }
 }
