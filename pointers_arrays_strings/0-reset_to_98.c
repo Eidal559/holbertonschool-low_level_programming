@@ -8,10 +8,10 @@
 * Return: 0
 */
 
-void updateValue(int *ptr)
+void reset_to_98(int *n)
 {
-if (ptr != NULL)
+if (n != NULL)
 {
-*ptr = 98;
+*n = 98;
 }
 }
