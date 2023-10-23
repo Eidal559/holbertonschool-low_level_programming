@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
-* updateValue - Update the value pointed to by an integer pointer to 98.
+* reset_to_98 - Update the value pointed to by an integer pointer to 98.
 * @ptr: A pointer to an integer.
 *
 * Return: 0
