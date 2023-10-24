@@ -24,9 +24,12 @@ else
 {
 start_index = (length - 1) / 2;
 }
+if (start_index < length)
+{
 for (i = start_index; i < length; i++)
 {
 putchar(str[i]);
 }
 putchar('\n');
+}
 }
