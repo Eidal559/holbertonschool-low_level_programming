@@ -14,6 +14,14 @@ char *cap_string(char *str)
 int capitalize_next = 1;
 int i = 0;
 int is_separator(char c);
+char separators[] = "\t\n,;.!?\"(){}";
+for (i = 0; separators[i] != '\0'; i++)
+{
+if (c == separators[i])
+return (1);
+}
+return (0);
+}
 
 while (str[i] != '\0')
 {

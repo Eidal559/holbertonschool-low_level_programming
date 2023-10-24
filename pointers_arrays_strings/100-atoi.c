@@ -10,32 +10,23 @@
 
 int _atoi(char *s)
 {
-int result = 0;
-int sign = 1;
-
-while (*s)
+int value = 0, a, negative = 1;
+for (a = 0; s[a] != '\0'; a++)
+if (s[a] == '-')
 {
-if (*s == ' ' || (*s >= 9 && *s <= 13))
-{
-s++;
+negative = negative * -1;
 }
-else if (*s == '-')
+if (s[a] >= '0' && s[a] <= '9')
 {
-sign = -1;
-s++;
+if (value >= 214748364 && negative < 0)
+{
+return (-214748364);
 }
-else if (*s == '+')
+value = value * 10 + (s[a] - '0');
+if (s[a + 1] < '0' || s[a + 1] > '9')
 {
-s++;
-}
-else if (*s >= '0' && *s <= '9')
-result = result * 10 + (*s - '0');
-{
-s++;
-}
-{
-break;
+return (value * negative);
 }
 }
-return (result * sign);
+return (value * negative);
 }
