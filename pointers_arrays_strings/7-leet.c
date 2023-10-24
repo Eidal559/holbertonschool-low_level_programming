@@ -11,28 +11,20 @@
 
 char *leet(char *str)
 {
+char leet_chars[] = "aAeEoOtTlL";
+char leet_replacements[] = "4307711";
 int i, j;
-char leet_dict[] = "aAeEoOtTlL";
-char leet_replace[] = "4307711";
 
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; leet_dict[j] != '\0'; j++)
+for (j = 0; leet_chars[j] != '\0'; j++)
 {
-if (str[i] == leet_dict[j])
+if (str[i] == leet_chars[j])
 {
-str[i] = leet_replace[j];
+str[i] = leet_replacements[j];
 break;
 }
 }
 }
 return (str);
-}
-
-int main ()
-{
-char str[] = "741k is ch34p. Sh0w m3 7h3 c0d3.";
-printf("Original: %s\n", str);
-printf("Leetified: %s\n", leet(str));
-return (0);
 }
