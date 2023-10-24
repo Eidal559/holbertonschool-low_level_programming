@@ -10,18 +10,14 @@
 void puts_half(char *str)
 {
 int length = strlen(str);
-int start;
 int i;
-
-if (length % 2 == 0)
+ 
+if (length == 0)
 {
-start = length / 2;
+return;
 }
-else
-{
-start = (length - 1) / 2;
-}
-for (i = start; i < length; i++)
+int start_index = (length - 1) / 2 + (length % 2);
+for (i = start_index; i < length; i++)
 {
 putchar(str[i]);
 }
