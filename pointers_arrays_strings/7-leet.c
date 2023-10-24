@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * leet - Encodes a string into "leet" (1337).
@@ -26,4 +27,12 @@ break;
 }
 }
 return (str);
+}
+
+int main ()
+{
+char str[] = "741k is ch34p. Sh0w m3 7h3 c0d3.";
+printf("Original: %s\n", str);
+printf("Leetified: %s\n", leet(str));
+return (0);
 }
