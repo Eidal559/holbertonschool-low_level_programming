@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <ctype.h>
 
 /**
 * cap_string - Capitalizes the first letter of each word in a string.
@@ -12,33 +12,27 @@
 char *cap_string(char *str)
 {
 int capitalize_next = 1;
-int i = 0;
-int is_separator(char c);
-char separators[] = "\t\n,;.!?\"(){}";
-for (i = 0; separators[i] != '\0'; i++)
-{
-if (c == separators[i])
-return (1);
-}
-return (0);
-}
+int i;
 
-while (str[i] != '\0')
+for (i = 0; str[i] != '\0'; i++)
 {
-if (is_separator(str[i]))
+if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+str[i] == '}')
 {
 capitalize_next = 1;
 }
-else if (capitalize_next && str[i] >= 'a' && str[i] <= 'z')
+else if (capitalize_next && isalpha(str[i]))
 {
-str[i] -= 32;
+str[i] = toupper(str[i]);
 capitalize_next = 0;
 }
 else
 {
 capitalize_next = 0;
 }
-i++;
 }
 return (str);
 }
