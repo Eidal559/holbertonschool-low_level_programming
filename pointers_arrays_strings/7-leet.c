@@ -24,6 +24,6 @@ str[i] = leet_replace[j];
 break;
 }
 }
-return (str);
 }
+return (str);
 }
