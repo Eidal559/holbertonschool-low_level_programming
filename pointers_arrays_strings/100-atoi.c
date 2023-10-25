@@ -31,7 +31,7 @@ while (*s >= '0' && *s <= '9')
 {
 if (result > (INT_MAX - (*s - '0')) / 10)
 {
-return (sign == 1) ? INT_MAX : INT_MIN;
+return (sign == 1 ? INT_MAX : INT_MIN);
 }
 result = result * 10 + (*s - '0');
 s++;
