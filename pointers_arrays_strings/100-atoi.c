@@ -1,32 +1,28 @@
 #include "main.h"
-#include <limits.h>
+#include <stdio.h>
 
 /**
 * _atoi - Converts a string to an integer, considering leading signs
 * @s: The input string to be converted.
 *
-* Return: The converted integer value.
+* Return: The integer value represented by the string.
 */
 
 int _atoi(char *s)
 {
-int value = 0, a, negative = 1;
-for (a = 0; s[a] != '\0'; a++)
-if (s[a] == '-')
+int result = 0;
+int sign = 1;
+
+while (*s)
 {
-negative = negative * -1;
-}
-if (s[a] >= '0' && s[a] <= '9')
+if (*s == '-')
 {
-if (value >= 214748364 && negative < 0)
+sign *= -1;
+}
+else if (*s >= '0' && *s <= '9')
 {
-return (-214748364);
+break;
 }
-value = value * 10 + (s[a] - '0');
-if (s[a + 1] < '0' || s[a + 1] > '9')
-{
-return (value * negative);
+s++;
 }
-}
-return (value * negative);
 }
