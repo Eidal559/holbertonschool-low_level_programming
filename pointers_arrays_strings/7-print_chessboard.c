@@ -5,7 +5,7 @@
 * print_chessboard - Prints a chessboard with chess piece positions.
 *
 */
-void print_chessboard(void)
+void print_chessboard(char (*a)[8])
 {
 char chessboard[8][8] = {
 {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
