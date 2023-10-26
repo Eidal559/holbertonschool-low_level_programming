@@ -2,28 +2,34 @@
 #include <stdio.h>
 
 /**
-* print_chessboard - Prints a chessboard represented as a 2d array.
+* print_chessboard - Prints a chessboard with chess piece positions.
 *
-* @a: The 8x8 chessboard represented as a 2d character array.
 */
-void print_chessboard(char a[8][8])
+void print_chessboard(void)
 {
+char chessboard[8][8] = {
+{'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
+{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+{'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'}
+};
 int i;
 int j;
-
+printf(" a b c d e f g h\n");
 for (i = 0; i < 8; i++)
+{
+printf("%d ", 8 - i);
 {
 for (j = 0; j < 8; j++)
 {
-if (a[i][j] == ' ')
-{
-printf(" ");
+printf("%c ", chessboard[i][j]);
 }
-else
-{
-printf("%c ", a[i][j]);
+printf("%d\n", 8 - i);
 }
-}
-printf("\n");
+printf(" a b c d e f g h\n");
 }
 }
