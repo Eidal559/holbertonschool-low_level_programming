@@ -15,7 +15,7 @@ int i;
 for (i = 0; i < size; i++)
 {
 primaryDiagonalSum += a[i * size + i];
-secondaryDiagonalSum += a[i * size + (size - 1 -i)];
+secondaryDiagonalSum += a[i * size + (size - 1 - i)];
 }
 printf("Sum of the primary diagonal: %d\n", primaryDiagonalSum);
 printf("Sum of the secondary diagonal: %d\n", secondaryDiagonalSum);
