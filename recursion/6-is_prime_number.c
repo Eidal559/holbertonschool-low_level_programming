@@ -4,7 +4,7 @@
 /**
 * is_divisible - Helper function to check if n is divisible by divisor.
 * @n: The number to check for divisibility.
-* is_prime_number - Checks if an integer is a prime number.
+* @divisor: The divisor to check.
 * Return: 1 if n is divisible by divisor, 0 otherwise.
 */
 
@@ -21,6 +21,11 @@ return (0);
 
 return (is_divisible(n, divisor + 1));
 }
+
+/**
+* is_prime_number - Checks if an integer is a prime number.
+* Return: 1 if n is a prime number, othewise 0.
+*/
 
 int is_prime_number(int n)
 {
