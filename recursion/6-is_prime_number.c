@@ -24,6 +24,7 @@ return (is_divisible(n, divisor + 1));
 
 /**
 * is_prime_number - Checks if an integer is a prime number.
+* @n: The integer to check for primality.
 * Return: 1 if n is a prime number, othewise 0.
 */
 
