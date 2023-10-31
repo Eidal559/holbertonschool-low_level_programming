@@ -3,9 +3,9 @@
 
 /**
 * _sqrt_recursion - Returns the natural square root of a number.
-* find_sqrt - Recursive function to find the square root.
 * @guess: The current guess for the square foot.
 * @n: The number for which to find the square root.
+* find_sqrt - Recursive function to find the square root.
 * Return: The natural square root of n. if there no natural square root.
 */
 int find_sqrt(int n, int guess);
