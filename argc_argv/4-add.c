@@ -13,14 +13,14 @@
 
 int main(int argc, char *argv[])
 {
+int sum = 0;
+bool error = false;
+
 if (argc == 1)
 {
 printf("0\n");
 return (0);
 }
-
-int sum = 0;
-bool error = false;
 
 for (int i = 1; i < argc; i++)
 {
