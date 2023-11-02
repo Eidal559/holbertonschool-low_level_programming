@@ -4,10 +4,10 @@
 int find_sqrt(int n, int guess);
 
 /**
-* _sqrt_recursion - Returns the natural square root of a number.
+* _sqrt_recursion - Calculates the square root of a number using a recursive algorith.
 * @n: The number for which to find the square root.
 *
-* Return : The natural square root of n, or -1 if there no natural square.
+* Return : The square root of n, if its a perfect square, or -1 if not found.
 */
 int _sqrt_recursion(int n)
 {
@@ -24,7 +24,7 @@ return (find_sqrt(n, 1));
 * @n: The number for which to find the square root.
 * guess: The current guess for the square root.
 *
-* Return: The square root of n.
+* Return: The square root of n, or -1 if not found.
 */
 int find_sqrt(int n, int guess)
 {
