@@ -4,7 +4,7 @@
 int find_sqrt(int n, int guess);
 
 /**
-* _sqrt_recursion - Calculates the square root of a number using a recursive algorith.
+* _sqrt_recursion - The square root of a number using a recursive algorith.
 * @n: The number for which to find the square root.
 *
 * Return : The square root of n, if its a perfect square, or -1 if not found.
