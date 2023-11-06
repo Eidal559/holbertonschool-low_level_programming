@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 /**
-* create_array - create an array of characters and initialize it witha character.
+* create_array - create an array of characters and initialize with character.
 * @size: The size of the array to create.
 * @c: The character to initialize the array with.
 *
