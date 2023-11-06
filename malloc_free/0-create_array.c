@@ -14,19 +14,16 @@
 char *create_array(unsigned int size, char c)
 {
 char *array;
-int i;
 if (size == 0)
 return (NULL);
 array = (char *)malloc(size * sizeof(char));
 if (array == NULL)
 return (NULL);
-
-for (unsigned i = 0; i < size; i++)
+unsigned int i;
+for (i = 0; i < size; i++)
 {
-write(STDOUT_FILENO, &array[i], 1);
-write(STDOUT_FILENO, " ", 1);
+array[i] = c;
 }
-write(STDOUT_FILENO, "\n", 1);
 free(array);
 
 return (array);
@@ -35,7 +32,7 @@ int main(void)
 {
 unsigned int size = 10;
 char character = 'A';
-int i;
+
 char *array = create_array(size, character);
 
 if (array == NULL)
@@ -45,6 +42,14 @@ write(STDOUT_FILENO, "Memory allocation failed.\n", 26);
 else
 {
 write(STDOUT_FILENO, "Array created: ", 15);
+unsigned int i;
+
+for (i = 0; i < size; i++)
+{
+write(STDOUT_FILENO, &array[i], 1);
+write(STDOUT_FILENO, " ", 1);
+}
+write(STDOUT_FILENO, "\n", 1);
 free(array);
 }
 return (0);
