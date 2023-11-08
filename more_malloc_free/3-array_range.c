@@ -22,7 +22,7 @@ return (NULL);
 
 num_elements = max - min + 1;
 
-arr = (int *)malloc(num_elements * sizeof(int));
+arr = (int *)malloc(num_elements *sizeof(int));
 
 if (arr == NULL)
 {
