@@ -11,12 +11,15 @@
 
 int *array_range(int min, int max)
 {
+int num_elements;
+int i;
+
 if (min > max)
 {
 return (NULL);
 }
 
-int num_elements = max - min + 1;
+num_elements = max - min + 1;
 
 int *arr = (int *)malloc(num_elements * sizeof(int));
 
@@ -25,7 +28,7 @@ if (arr == NULL)
 return (NULL);
 }
 
-for (int i = 0; i < num_elements; i++)
+for (i = 0; i < num_elements; i++)
 {
 arr[i] = min + i;
 }
