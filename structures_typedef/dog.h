@@ -15,4 +15,14 @@ float age;
 char *owner;
 };
 
+/**
+* init_dog - Initialize a struct dog with the given values.
+* @d: Pointer to the struct dog to the initialized.
+* @name: Pointer to a character array for the dog name.
+* @age: The age of the dog as a float.
+* @owner: Pointer to a character array for the dog owner name.
+*/
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
