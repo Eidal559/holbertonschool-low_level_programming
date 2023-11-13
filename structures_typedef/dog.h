@@ -15,6 +15,8 @@ float age;
 char *owner;
 };
 
+typedef struct dog dog_t;
+
 /**
 * init_dog - Initialize a struct dog with the given values.
 * @d: Pointer to the struct dog to the initialized.
