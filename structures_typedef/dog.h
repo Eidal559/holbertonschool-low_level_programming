@@ -22,7 +22,6 @@ char *owner;
 * @age: The age of the dog as a float.
 * @owner: Pointer to a character array for the dog owner name.
 */
-
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
