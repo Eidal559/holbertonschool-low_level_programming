@@ -21,7 +21,7 @@ return (a + b);
 *
 * Return: The result of the subtraction.
 */
-int op_sub( int a, int b)
+int op_sub(int a, int b)
 {
 return (a - b);
 }
