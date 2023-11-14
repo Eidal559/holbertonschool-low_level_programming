@@ -25,3 +25,31 @@ return (i);
 }
 return (-1);
 }
+
+/**
+* is_strictly_positve - Check if a number is greater than 0.
+* @elem: The integer to check.
+*
+* Return: 1 if true, 0 otherwise.
+*/
+int is_strickly_positive(int elem)
+{
+return (elem > 0);
+}
+
+/**
+* main - Entry point.
+*
+* Return: Always 0.
+*/
+int main(void)
+{
+int array[8] = {0, -5, 3, 0, 7, 2, -1, 0};
+int index;
+
+index = int_index(array, 8, is_strickly_positive);
+
+printf("%d\n", index);
+
+return (0);
+}
