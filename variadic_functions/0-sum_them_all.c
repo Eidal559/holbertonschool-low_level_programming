@@ -14,8 +14,8 @@ if (n == 0)
 return (0);
 }
 
-int sum = 0;
 unsigned int i;
+int sum = 0;
 
 va_list args;
 
