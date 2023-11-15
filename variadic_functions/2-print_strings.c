@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
-* print_string - Prints strings followed by a new line.
+* print_strings - Prints strings followed by a new line. 
 * @separator: The string to be printed between strings (or NULL)
 * @n: The number of strings passed to the function.
 * @...: The strings to be printed.
-* print_string: This function takes a variable number of strings
+*
+* Description: This function takes a variable number of strings
 * and prints them with the specified separator between them.
 * If a separator is provided, it is printed between strings. If
 * a string is NULL, it prints "(nil)". new line is printed at the end
