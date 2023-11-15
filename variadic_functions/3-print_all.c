@@ -33,7 +33,7 @@ printf("%s%f", separator, va_arg(args, double));
 separator = ", ";
 break;
 case 's':
-printf("%s%s", separator, va_arg(args, char *) ? : "(nil)");
+printf("%s%s", separator, (va_arg(args, char *) ? va_arg(args, char *) : "(nil)"));
 separator = ", ";
 break;
 default:
