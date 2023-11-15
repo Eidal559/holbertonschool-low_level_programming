@@ -6,6 +6,8 @@
 * @separator: The string to be printed between strings (or NULL)
 * @n: The number of strings passed to the function.
 * @...: The strings to be printed.
+* Description: This function takes a variable number of strings
+* and prints them with the specified separator between them.
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
