@@ -47,11 +47,7 @@ return (a * b);
 */
 int op_div(int a, int b)
 {
-if (b != 0)
 return (a / b);
-
-printf("Error: cannot divide by zero\n");
-exit(EXIT_FAILURE);
 }
 
 /**
@@ -63,9 +59,5 @@ exit(EXIT_FAILURE);
 */
 int op_mod(int a, int b)
 {
-if (b != 0)
 return (a % b);
-
-printf("Error: Cannot divide by zero\n");
-exit(EXIT_FAILURE);
 }
