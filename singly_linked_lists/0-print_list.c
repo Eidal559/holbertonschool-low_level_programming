@@ -22,6 +22,6 @@ printf("-> 0 elements\n");
 else if (count == 1)
 printf("-> 1 element\n");
 else
-print("-> %lu elements\n", count);
+printf("-> %lu elements\n", count);
 return (count);
 }
