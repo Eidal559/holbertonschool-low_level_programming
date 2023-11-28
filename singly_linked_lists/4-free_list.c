@@ -13,7 +13,7 @@ current = head;
 
 while (current != NULL)
 {
-next = current->next;
+temp = current->next;
 free(current->str);
 free(current);
 current = temp;
