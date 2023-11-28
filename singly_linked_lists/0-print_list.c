@@ -17,6 +17,6 @@ printf("[%u] %s\n", h->len, h->str != NULL ? h->str : "(nil)");
 h = h->next;
 count++;
 }
-printf("-> %lu elements\n", count);
+printf("-> %lu elements\n", count, count != 1 ? "s" : "");
 return (count);
 }
