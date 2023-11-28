@@ -13,15 +13,9 @@ size_t count = 0;
 
 while (h != NULL)
 {
-printf("[%u] %s\n", h->len, h->str != NULL ? h->str : "(nil)");
+printf("[%u] %s\n", h->len, (h->str != NULL ? h->str : "(nil)"));
 h = h->next;
 count++;
 }
-if (count == 0)
-printf("-> 0 elements\n");
-else if (count == 1)
-printf("-> 1 element\n");
-else
-printf("-> %lu elements\n", count);
 return (count);
 }
