@@ -20,7 +20,14 @@ exit(1);
 }
 
 res = append_text_to_file(av[1], av[2]);
-printf("-> %i)\n", res);
+if (res == 1)
+{
+printf("1\n");
+}
+else
+{
+printf("-1\n");
+}
 
 return (0);
 }
