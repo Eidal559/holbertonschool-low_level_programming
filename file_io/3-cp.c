@@ -29,6 +29,8 @@ const char *file_from = argv[1];
 const char *file_to = argv[2];
 int fd_from;
 int fd_to;
+char buffer[BUFFER_SIZE];
+ssize_t bytesRead, bytesWritten;
 
 if (argc != 3)
 {
@@ -45,6 +47,19 @@ fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP 
 if (fd_to == -1)
 {
 error_exit(99, "Error: Can't write to file %s\n", file_to);
+}
+
+while ((bytesRead = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+{
+bytesWritten = write(fd_to, buffer, bytesRead);
+{
+error_exit(99, "Error: Can't write to file %s\n", file_to);
+}
+}
+
+if (bytesRead == -1)
+{
+error_exit(98, "Error: Can't close fd %d\n", fd_from);
 }
 
 if (close(fd_from) == -1)
