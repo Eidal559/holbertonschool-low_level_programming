@@ -2,11 +2,26 @@
 #include <stdarg.h>
 
 /**
-* main - Copies the content of one file to another.
+* error_exit - Prints an error message and exits the program
+* @code: The exit code
+* @message: The error message format string
+* @...: Additional arguments for the format string
+*/
+void error_exit(int code, const char *message, ...)
+{
+va_list args;
+va_start(args, message);
+dprintf(2, message, args);
+va_end(args);
+exit(code);
+}
+
+/**
+* main - Copies the content of one file to another
 * @argc: The argument count
 * @argv: The argument vector
 *
-* Return: 0 on success, otherwise exists with an error code.
+* Return: 0 on success, otherwise exits with an error code
 */
 int main(int argc, char *argv[])
 {
