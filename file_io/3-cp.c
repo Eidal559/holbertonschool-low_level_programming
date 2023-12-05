@@ -30,7 +30,8 @@ const char *file_to = argv[2];
 int fd_from;
 int fd_to;
 char buffer[BUFFER_SIZE];
-ssize_t bytesRead, bytesWritten;
+ssize_t bytesRead;
+ssize_t bytesWritten;
 
 if (argc != 3)
 {
@@ -71,6 +72,6 @@ if (close(fd_to) == -1)
 {
 error_exit(100, "Error: Can't close fd %d\n", fd_to);
 }
-
+(void)bytesWritten;
 return (0);
 }
