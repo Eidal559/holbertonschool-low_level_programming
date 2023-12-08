@@ -7,7 +7,7 @@
 * print_hash_table - Prints the contents of a hash table.
 * @ht: The hash table to print.
 */
-void print_hash_table(const hash_table_t *ht)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 unsigned long int i;
 hash_node_t *node;
