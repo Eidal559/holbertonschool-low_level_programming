@@ -22,7 +22,7 @@ current = ht->array[index];
 while (current != NULL)
 {
 if (strcmp(current->key, key) == 0)
-return current->value;
+return (current->value);
 current = current->next;
 }
 
