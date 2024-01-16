@@ -15,8 +15,10 @@ int linear_search(int *array, size_t size, int value) {
         return (-1);
     }
 
+    size_t i;  // Move the variable declaration outside the loop
+
     /* Iterate through the array to find the value */
-    for (size_t i = 0; i < size; ++i) {
+    for (i = 0; i < size; ++i) {
         /* Print the value being compared */
         printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 
@@ -28,20 +30,4 @@ int linear_search(int *array, size_t size, int value) {
 
     /* If the value is not found, return -1 */
     return (-1);
-}
-
-int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    size_t size = sizeof(arr) / sizeof(arr[0]);
-
-    int search_value = 7;
-    int result = linear_search(arr, size, search_value);
-
-    if (result != -1) {
-        printf("Value %d found at index %d\n", search_value, result);
-    } else {
-        printf("Value %d not found in the array\n", search_value);
-    }
-
-    return (0);
 }
